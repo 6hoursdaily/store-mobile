@@ -1,0 +1,44 @@
+<ion-view title="Orders" id="page4">
+  <ion-nav-buttons side="right" class="has-header">
+    <button class="button button-royal icon ion-chevron-down"></button>
+  </ion-nav-buttons>
+  <ion-content padding="false" class="manual-remove-top-padding has-header">
+    <form id="orders-form10" class="list">
+      <label class="item item-input" id="orders-search4">
+        <i class="icon ion-search placeholder-icon"></i>
+        <input type="search" placeholder="">
+      </label>
+      <label class="item item-select" id="orders-select4">
+        <span class="input-label">Select</span>
+        <select>
+          <option>-- Status --</option>
+          <option>Placed</option>
+          <option>Updated</option>
+          <option>Confirmed</option>
+          <option>Processing</option>
+          <option>Shipped</option>
+          <option>Picked Up</option>
+          <option>Delivered</option>
+          <option>Cancelled</option>
+        </select>
+      </label>
+    </form>
+    <ion-list id="orders-list3">
+      <ion-item class="item-icon-right positive" id="orders-list-item26" ui-sref="order001()">0001
+        <span class="item-note">[Placed] Jerry Pascua</span>
+        <i class="icon ion-chatbubble icon-accessory"></i>
+        <ion-option-button class="button-assertive">Cancel</ion-option-button>
+      </ion-item>
+      <ion-item class="item-icon-right positive" id="orders-list-item29">0002
+        <span class="item-note">[Confirmed] Julius</span>
+        <i class="icon ion-chatbubble icon-accessory"></i>
+        <ion-option-button class="button-assertive">Cancel</ion-option-button>
+      </ion-item>
+      <ion-item class="item-icon-right positive" id="orders-list-item30">0003
+        <span class="item-note">[Delivered] Annabelle Francisco</span>
+        <i class="icon ion-chatbubble icon-accessory"></i>
+        <ion-option-button class="button-assertive">Cancel</ion-option-button>
+      </ion-item>
+    </ion-list>
+  </ion-content>
+</ion-view>
