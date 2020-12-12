@@ -9,14 +9,14 @@ angular.module('app.routes', [])
   $stateProvider
     
 
-      .state('base', {
+      .state('storeE', {
     url: '/',
-    templateUrl: 'templates/base.html',
-    controller: 'baseCtrl'
+    templateUrl: 'templates/storeE.html',
+    controller: 'storeECtrl'
   })
 
   .state('dashboard', {
-    url: '/page2',
+    url: '/home',
     templateUrl: 'templates/dashboard.html',
     controller: 'dashboardCtrl'
   })
@@ -33,10 +33,82 @@ angular.module('app.routes', [])
     controller: 'order001Ctrl'
   })
 
-  .state('login', {
-    url: '/page6',
-    templateUrl: 'templates/login.html',
-    controller: 'loginCtrl'
+  .state('products', {
+    url: '/products',
+    templateUrl: 'templates/products.html',
+    controller: 'productsCtrl'
+  })
+
+  .state('newProductCategory', {
+    url: '/categories/new',
+    templateUrl: 'templates/newProductCategory.html',
+    controller: 'newProductCategoryCtrl'
+  })
+
+  .state('updateCategory', {
+    url: '/category/1/edit',
+    templateUrl: 'templates/updateCategory.html',
+    controller: 'updateCategoryCtrl'
+  })
+
+  .state('blueberryProducts', {
+    url: '/categories/1',
+    templateUrl: 'templates/blueberryProducts.html',
+    controller: 'blueberryProductsCtrl'
+  })
+
+  .state('addProduct', {
+    url: '/categories/1/products/new',
+    templateUrl: 'templates/addProduct.html',
+    controller: 'addProductCtrl'
+  })
+
+  .state('updateProduct', {
+    url: '/category/1/products/1',
+    templateUrl: 'templates/updateProduct.html',
+    controller: 'updateProductCtrl'
+  })
+
+  .state('settings', {
+    url: '/settings',
+    templateUrl: 'templates/settings.html',
+    controller: 'settingsCtrl'
+  })
+
+  .state('payments', {
+    url: '/payments',
+    templateUrl: 'templates/payments.html',
+    controller: 'paymentsCtrl'
+  })
+
+  .state('setupNewPayment', {
+    url: '/payments/new',
+    templateUrl: 'templates/setupNewPayment.html',
+    controller: 'setupNewPaymentCtrl'
+  })
+
+  .state('updatePayment', {
+    url: '/payments/2/edit',
+    templateUrl: 'templates/updatePayment.html',
+    controller: 'updatePaymentCtrl'
+  })
+
+  .state('delivery', {
+    url: '/fulfillments',
+    templateUrl: 'templates/delivery.html',
+    controller: 'deliveryCtrl'
+  })
+
+  .state('messages', {
+    url: '/messages',
+    templateUrl: 'templates/messages.html',
+    controller: 'messagesCtrl'
+  })
+
+  .state('juliusFrancisco', {
+    url: '/messages/contact/1',
+    templateUrl: 'templates/juliusFrancisco.html',
+    controller: 'juliusFranciscoCtrl'
   })
 
 $urlRouterProvider.otherwise('/')
