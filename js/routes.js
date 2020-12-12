@@ -99,6 +99,36 @@ angular.module('app.routes', [])
     controller: 'deliveryCtrl'
   })
 
+  .state('updateDelivery', {
+    url: '/fulfillments/2',
+    templateUrl: 'templates/updateDelivery.html',
+    controller: 'updateDeliveryCtrl'
+  })
+
+  .state('automaticMessages', {
+    url: '/custom-messages',
+    templateUrl: 'templates/automaticMessages.html',
+    controller: 'automaticMessagesCtrl'
+  })
+
+  .state('newCannedMessage', {
+    url: '/custom-messages/new',
+    templateUrl: 'templates/newCannedMessage.html',
+    controller: 'newCannedMessageCtrl'
+  })
+
+  .state('updateCannedMessage', {
+    url: '/custom-messages/1/edit',
+    templateUrl: 'templates/updateCannedMessage.html',
+    controller: 'updateCannedMessageCtrl'
+  })
+
+  .state('updateAutomaticMessage', {
+    url: '/custom-messages/2/edit',
+    templateUrl: 'templates/updateAutomaticMessage.html',
+    controller: 'updateAutomaticMessageCtrl'
+  })
+
   .state('messages', {
     url: '/messages',
     templateUrl: 'templates/messages.html',
